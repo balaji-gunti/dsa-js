@@ -47,4 +47,4 @@ const longestSubArrayWithSum0Better = (nums) => {
     return maxLen;
 }
 console.log(longestSubArrayWithSum0Brute([15, -2, 2, -8, 1, 7, 10, 23]))
-console.log(longestSubArrayWithSum0Better([15, -2, 2, -8, 1, 7, 10, 23]))
+console.log(longestSubArrayWithSum0Better([2, 10, 4]))

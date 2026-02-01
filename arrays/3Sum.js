@@ -54,7 +54,7 @@ const threeSumBetter = (nums) => {
     const tripletsSet = new Set();
     for(let i = 0; i < nums.length; i++) {
         const thirdElemSet = new Set();
-        for(let j = 1 + 1; j < nums.length; j++) {
+        for(let j = i + 1; j < nums.length; j++) {
             const thirdElm = -( nums[i] + nums[j] );
             if(thirdElemSet.has(thirdElm)) {
                 const triplet = [ nums[i], nums[j], thirdElm ].sort((a, b) => a - b)

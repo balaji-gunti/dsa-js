@@ -28,7 +28,7 @@ const findPeak = (nums) => {
     if(nums[0] > nums[1]) return 0;          // First element is peak
     if(nums[n - 1] > nums[n - 2]) return n - 1; // Last element is peak
     // Binary search for peak in the remaining array
-    let low = 0, high = n - 1;
+    let low = 1, high = n - 2;
     while(low <= high) {
         const mid = Math.floor((low + high) / 2);
 
@@ -48,5 +48,6 @@ const findPeak = (nums) => {
     return -1; // Should never reach here for valid input
 }
 
-console.log( findPeak([1,2,3,1]) )
+console.log( findPeak([1,2,1]) )
+console.log( findPeak([1]) )
 console.log( findPeak([1,2,1,3,5,6,4]) )
